@@ -1,0 +1,1 @@
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QHello World \nFirst item \nSecond item \nThird item \nItem A \nItem B \nItem C\\E$"}
