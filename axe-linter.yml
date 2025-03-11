@@ -1,0 +1,34 @@
+# axe-linter.yml
+
+# Specify the files or directories to lint
+files:
+  - '**/*.html'   # Lint all HTML files in the project
+  - '**/*.css'    # Lint all CSS files in the project
+  - '**/*.js'     # Lint all JavaScript files in the project
+
+# Specify the rules to enable or disable
+rules:
+  # Enable all rules by default
+  default: true
+
+  # You can disable specific rules if needed
+  # For example, to disable the rule for 'color-contrast':
+  color-contrast: false
+
+# Specify the output format
+output:
+  format: 'stylish'  # Options: 'stylish', 'json', 'html'
+
+# Specify the severity levels for reporting
+severity:
+  error: true  # Report errors
+  warning: true  # Report warnings
+  info: false  # Report informational messages
+
+# Additional options can be specified here
+options:
+  # Specify any additional Axe options if needed
+  axeOptions:
+    runOnly:
+      type: 'tag'
+      values: ['wcag2a', 'wcag2aa']  # Run only WCAG 2.0 A and AA tests
