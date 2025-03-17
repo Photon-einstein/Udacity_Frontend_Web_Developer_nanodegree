@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    line-height: 1.5;
+  }
+  
+  header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+  }
+  
+  .disclaimer {
+    cursor: pointer;
+  }
+  
+  .banner {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+  }
+  
+  .container {
+    min-height: 100vh;
+    width: 90%;
+    max-width: 1024px;
+    margin: 20px auto;
+  
+  }
+  
+  .sidebar {
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    float: right;
+
+    padding: 20px;
+
+    width: 35;
+
+    margin-left: 20px; /* Add margin to separate from the footer content */
+    margin-right: 0px;
+    width: 30%; /* Set a fixed width for the sidebar */
+  }
+
+  .article-footer {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space between sidebar and footer content */
+    align-items: flex-start; /* Align items at the start */
+    background-color: white;
+    
+    color: black;
+    padding: 20px; /* Add padding for spacing */
+    margin: 10px;  
+  }
+
+  .article-footer p {
+    float: left;
+    font-style: italic;
+  }
+  
+  .main-article {
+    background-color: #e9ecef;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .page-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 10%;
+
+    clear: both;
+  }

@@ -1,0 +1,70 @@
+* {
+    font-weight: normal;
+    font-size: medium;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  .signup-form {
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    color: rgb(23, 36, 41)
+  }
+  
+  .form-title {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    font-weight: bold;
+    color:#386d36
+  }
+  
+  .input-field {
+    border: 2px solid #ccc;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 95%;
+    line-height: 1.5;
+  }
+
+  .input-field:focus {
+    background-color: rgb(140, 155, 120);
+  }
+
+  .input-field:valid {
+    background-color: #99d497;
+  }
+  
+  .input-field:invalid {
+    background-color: #be6a6a;
+  }
+
+  .submit-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #1db318;
+    color:#f5f8f2
+  }
+
+  .submit-btn:hover {
+    background-color: #0a9606;
+  }
+
+  .signup-form {
+    background-color: #a6d1a6;
+  }
+
+  .form-element {
+    font-family: Tahoma, sans-serif
+  }
+
+  .form-input {
+    line-height: 7ex;
+  }
