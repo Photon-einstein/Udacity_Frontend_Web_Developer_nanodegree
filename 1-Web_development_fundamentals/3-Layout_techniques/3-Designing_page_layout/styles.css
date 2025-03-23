@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 2px solid #0006;
+    outline-offset: -2px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  .grid-container {
+    gap: 10px;
+    width: 80%;
+    height: 80vh;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+    grid-template-rows: 100px 150px 150px 150px 100px;
+  }
+  
+  .header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5rem;
+    grid-column: 1 / span 4;
+    grid-row: 1;
+  }
+  
+  .sidebar {
+    background-color: #c7def5;
+    padding: 20px;
+    grid-column: 1;
+    grid-row: 2 / span 3;
+  }
+  
+  .main-content {
+    background-color: #e9ecef;
+    padding: 20px;
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 3;
+  }
+  
+  .footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    grid-column: 1 / span 4;
+    grid-row: 5;
+  }
+  
+  .wild-card-1 {
+    padding: 20px;
+    background-color: #cfb;
+    grid-column: 4;
+    grid-row: 2;
+  }
+
+  .wild-card-2 {
+    padding: 20px;
+    background-color: #cfb;
+    grid-column: 4;
+    grid-row: 3;
+  }
+
+  .wild-card-3 {
+    padding: 20px;
+    background-color: #cfb;
+    grid-column: 4;
+    grid-row: 4;
+  }
