@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding: 10px;
+    min-height: calc(100vh - 20px);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header, .footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+  }
+  
+  .nav-menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nav-link {
+    background-color: #234;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin: 0px 0;
+    display: block;
+    text-align: center;
+  }
+  
+  .nav-link:hover {
+    background-color: #456;
+  }
+  
+  .content-wrapper {
+    margin: 10px 0;
+    flex: 1;
+  }
+  
+  .main-content {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 10px 0;
+  }
+  
+  .sidebar {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+  }
+
+  @media (min-width: 768px) {
+    
+    /* Exercise 1 */
+    .content-wrapper {
+        display: flex; /* Enable Flexbox */
+    }
+    
+    .main-content {
+        flex: 3; /* Main content takes up more space */
+    }
+    
+    .sidebar {
+        flex: 1; /* Sidebar takes up less space */
+    }
+
+    /* Exercise 2 */
+    .nav-menu {
+        display: flex; /* Enable Flexbox */
+        flex-direction: row;
+        justify-content: space-around; /* Space items evenly */
+        list-style-type: none; /* removal of bullet points */
+        padding: 0; /* remove default padding */
+        margin: 0; /* remove default margin */
+        border: 2px solid black;
+        
+    }
+
+    .nav-link {
+        color: "white"; /* text color" */
+        text-decoration: none; /* remove underline */
+        padding: 15px; /* Add padding for clickable padding */
+        flex: 1; /* each item takes equal space */
+        text-align: center; /* center the text */
+    }
+
+  }
+
+  @media (min-width: 1200px) {
+    .nav-menu {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .content-wrapper {
+      max-width: 1200px;
+      min-width: 1200px;
+      margin: 10px auto;
+      padding: 0;
+    }
+  }
