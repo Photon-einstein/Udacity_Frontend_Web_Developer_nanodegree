@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="KOCHI contact page">
+        <title>KOCHI contact page</title>
+    </head>
+    <body>
+        <nav class="nav">
+            <p>KOCHI</p>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="#">Home</a></li>
+                <li><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <h2>CONTACT US</h2>
+        <h3>Contact Details</h3>
+        <p>contact@kochi.com<br>(555) 555-5555</p>
+        <p>Central HQ</p>
+        <p>123 Avenue Street<br>City Township, CA 12345</p>
+
+        <h2>Online Inquiry</h2>
+        <form method="GET">
+            <div>
+                <label for="name">
+                    Name
+                    <input type="text" name="name" id="name" required minlength="2" maxlength="20">
+                </label>
+            </div>
+        
+            <div>
+                <label for="email">
+                    Email
+                    <input type="email" name="email" id="email" min="5" max="100">
+                </label>
+            </div>
+            
+            <div>
+                <label for="Message">
+                    Comments
+                    <br>
+                    <textarea name="textarea" id="message" rows="5" cols="30"></textarea>
+                </label>
+            </div>
+            <button class="button-submit">Submit</button>
+            <button class="button-reset">Reset</button>
+            <footer>Copyright Kochi Inc. 2024. Developed by Tiago Sousa.</footer>
+    </body>
+</html>
