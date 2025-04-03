@@ -5,53 +5,74 @@
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Kochi Solutions website">
+        <link rel="stylesheet" href="./css/index.css">
         <title>Kochi Solutions</title>
-        <link rel="stylesheet" href="./css/main-page.css">
     </head>
-    <body>
-        <nav class="nav">
-            <ul class="nav-menu">
-                <li><a class="nav-link" href="#">Home</a></li>
-                <li><a class="nav-link" href="#">About</a></li>
-                <li><a class="nav-link" href="#">Services</a></li>
-                <li><a class="nav-link" href="#">Blog</a></li>
-                <li><a class="nav-link" href="#">Testimonials</a></li>
-                <li><a class="nav-link" href="#">Contact</a></li>
+    <body class>
+        <header class="header">
+            <ul class="header-center">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-        </nav>
-        <h1>KOCHI SOLUTIONS</h1>
-        <h2>Think Positive. Think Kochi.</h2>
-        <button class="button-main-page">GO KOCHI NOW!</button>
-        <h3>History</h3>
-        <p>Founded in 2022, Kochi began as a small, visionary startup with a passion 
-        for helping people. What started as a humble operation with a few dedicated
-        individuals hash grown into a dynamic and influential company with a global
-        presence.</p>
-        <p>Over the years, we have continously adapted to the changing landscape,
-        leveraging our expertise and embracing new opportunities to expand our
-        offerings. Our journey has been marked by significant milestones, innovative
-        breakthroughs, and a steadfast commitment to our core values. As we continue
-        to grow, we remain true to the entrepreneurial spirit that has driven our
-        success from the very beginning.</p>
-        <img src="images/team-picture.png" alt="Our team" width="300px">
+        </header>
         
-        <h3>What We Do</h3>
-        <p class="bold">Innovative</p>
-        <p>Introducing new, original ideas.</p>
-        <p class="bold">Competent</p>
-        <p>With ability, knowledge, and skill to succeed.</p>
-        <p class="bold">Driven</p>
-        <p>Hard-working and ambitious.</p>
-        <p class="bold">Optimistic</p>
-        <p>Hopeful and confident about succeeding.</p>
+        <main class="main">
+            <h1>KOCHI SOLUTIONS</h1>
+            <h2>Think Positive. Think Kochi.</h2>
+            <button class="button-main-page">GO KOCHI NOW!</button>
+        </main>
+        <div class="main-content">
+            <h3 class="history-header">History</h3>
+            <div class="history-content">
+                <p>Founded in 2022, Kochi began as a small, visionary startup with a passion 
+                for helping people. What started as a humble operation with a few dedicated
+                individuals hash grown into a dynamic and influential company with a global
+                presence. <br><br>Over the years, we have continously adapted to the changing landscape,
+                leveraging our expertise and embracing new opportunities to expand our
+                offerings. Our journey has been marked by significant milestones, innovative
+                breakthroughs, and a steadfast commitment to our core values. As we continue
+                to grow, we remain true to the entrepreneurial spirit that has driven our
+                success from the very beginning.</p>
+                <img src="images/team-picture.png" class="main-image" alt="Our team">
+            </div>
+            
+            
+            <h3 class="history-header">What We Do</h3>
+            <div class="grid-container">
+                <div class="container-innovative">
+                    <p class="bold">Innovative</p>
+                    <p>Introducing new, original ideas.</p>
+                </div>
+                <div class="container-competent">
+                    <p class="bold">Competent</p>
+                    <p>With ability, knowledge, and skill to succeed.</p>
+                </div>
+                <div class="container-driven">
+                    <p class="bold">Driven</p>
+                    <p>Hard-working and ambitious.</p>
+                </div>
+                <div class="container-optimistic">
+                    <p class="bold">Optimistic</p>
+                    <p>Hopeful and confident about succeeding.</p> 
+                </div>
+            </div>
+                
+            <div class="mission-content">
+                <h3>Mission Statement</h3>
+                <p>At Kochi, our mission is to empower individuals and organizations by
+                providing <strong>innovative solutions</strong> that foster growth, inspire creativity, and drive
+                sustainable success. We are committed to delivering exceptional value to our
+                customers, partners and communities through a relentless pursuit of excellence,
+                ethical practices, and a <strong>deep understanding of the evolving needs of the markets
+                we serve.</strong></p>
+            </div>
+            
 
-        <h3>Mission Statement</h3>
-        <p>At Kochi, our mission is to empower individuals and organizations by
-        providing <strong>innovative solutions</strong> that foster growth, inspire creativity, and drive
-        sustainable success. We are committed to delivering exceptional value to our
-        customers, partners and communities through a relentless pursuit of excellence,
-        ethical practices, and a <strong>deep understanding of the evolving needs of the markets
-        we serve.</strong></p>
-        <footer>Copyright Kochi Inc. 2024. Developed by Tiago Sousa.</footer>
+            <footer class="footer">Copyright Kochi Inc. 2024. Developed by Tiago Sousa.</footer>
+        </div>
     </body>
 </html>

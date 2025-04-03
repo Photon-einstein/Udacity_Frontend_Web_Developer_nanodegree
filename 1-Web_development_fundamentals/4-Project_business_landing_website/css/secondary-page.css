@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.header {
+  display: flex; /* Enable Flexbox */
+  justify-content: space-between; /* space between left and right sections */
+  align-items: center; /* center items vertically */
+  background-color: #1674cc;
+  color: white; /* text color */
+  padding: 10px 10px; /* padding around the header */
+}
+
+.header-left {
+  flex: 1; /* Allow the left section to take available space */
+}
+
+.header-right {
+  display: flex;
+}
+
+.header-right ul {
+  padding: 0; /* remove default padding */
+  margin: 0; /* remove default margin */
+}
+
+.header-right li {
+  margin-left: 20px; /* space between links */
+  list-style-type: none; /* remove bullet points */
+}
+
+.header-right li a {
+  color: #fff; /* link color */
+  text-decoration: none; /* remove underline */
+}
+
+.header-right a:hover {
+  text-decoration: underline; /* underline on over */
+}
