@@ -59,16 +59,16 @@ body {
 }
 
 .grid-contact-details {
-  gap: 10px;
+  gap: 0px;
   width: 90%;
-  height: 50vh;
+  height: 40vh;
   flex: 1;
 
-  padding: 30px;
-  margin: 10px;
+  padding: 0px;
+  margin: 0px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .contact-details-section {
@@ -78,14 +78,68 @@ body {
 }
 
 .form-details-section {
-  text-align: left;
-  grid-column: 2;
-  grid-row: 1 / span 1; 
+  text-align: center;
+  grid-column: 1;
+  grid-row: 2 / span 1; 
 }
 
 .footer {
   background-color: #000305;
   color: #fff;
   text-align: center;
+  margin: 5px;
+}
+
+.inquiry-buttons {
+  display: fex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.button-submit {
+  flex: 1;
+  background-color: #1e974d;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  width: 20%;
   padding: 10px;
+}
+
+.button-reset {
+  flex: 1;
+  background-color: #c43f3f;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  width: 20%;
+  padding: 10px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+
+  .grid-contact-details {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  .contact-details-section {
+    text-align: center;
+    grid-column: 1;
+    grid-row: 1 / span 1; 
+  }
+
+  .form-details-section {
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1 / span 1; 
+  }
+
+  .footer {
+    padding: 10px;
+  }
 }
