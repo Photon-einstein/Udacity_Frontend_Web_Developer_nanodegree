@@ -1,26 +1,30 @@
+body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .header {
   display: flex; /* Enable Flexbox */
   justify-content: center;
   align-items: center;
   background-color: #e0be72;
   color: white; /* text color */
-  padding: 10px; /* padding around the header */
+  padding: 10px 0; /* padding around the header */
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
 }
 
 .header-center {
   display: flex;
-  flex: 0; /* Prevents it from growing or shrinking */
-}
-
-.header-center ul {
-  display: flex;
-  padding: 0; /* remove default padding */
-  margin: 0; /* remove default margin */
+  flex: auto; /* Prevents it from growing or shrinking */
 }
 
 .header-center li {
-  display: flex;
-  margin-left: 20px; /* space between links */
+  margin-left: 5px; /* space between links */
   list-style-type: none; /* remove bullet points */
 }
 
@@ -76,15 +80,14 @@
 }
 
 .grid-container {
-  gap: 10px;
-  width: 90%;
-  height: 15vh;
-
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
   padding: 10px;
-  margin: 5px;
+  margin: 5px auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 10px;
+  gap: 10px;
 }
 
 .container-innovative {
@@ -121,6 +124,21 @@
   text-align: justify;
 }
 
+.figure-kochi-team {
+  padding: 0 10px;
+}
+
+@media (max-width: 413px) {
+  .header-center {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-center li {
+    margin: 0;
+  }
+}
+
 @media (max-width: 768px) {
 
   .history-content {
@@ -128,18 +146,16 @@
   }
 
   .main-image {
-    width: 100%;
-    max-width: 300px;
+    max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
   }
 
   .grid-container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 50%;
-    width: 80%;
+    grid-template-rows: auto;
+    width: 100%;
+    max-width: 100%;
   }
   
   .container-innovative {
@@ -170,5 +186,9 @@
     height: auto;
     display: block;
     margin: 20 auto;
+  }
+
+  .header-center li {
+    margin: 10px;
   }
 }
