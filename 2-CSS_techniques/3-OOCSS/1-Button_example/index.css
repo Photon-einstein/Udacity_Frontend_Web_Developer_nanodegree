@@ -1,0 +1,28 @@
+/* Structure */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Skin */
+.button--primary {
+  background-color: #007BFF;
+  color: #ffffff;
+  border-color: #007BFF;
+}
+
+.button--secondary {
+  background-color: #6c757d;
+  color: #ffffff;
+  border-color: #6c757d;
+}
+
+.button--primary:hover,
+.button--secondary:hover {
+  opacity: 0.9;
+}
