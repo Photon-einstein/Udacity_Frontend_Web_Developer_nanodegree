@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+  }
+  .outter-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001f3f;
+    width: 80vw;
+    height: 80vh;
+  }
+  
+  .middle-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff7f50;
+    width: min(calc(100% - 30%), 400px);
+    height: max(calc(100% -30%), 600px);
+  }
+  
+  .inner-box {
+    background-color: #ffd700;
+    width: calc(100% - 50%);
+    height: calc(100% -50%);
+  }
