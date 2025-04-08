@@ -4,6 +4,10 @@
 npx live-server
 ```
 
+### BEM naming guide
+
+[BEM naming guide](https://getbem.com/naming/)
+
 ### SAASS documentation (CSS framework)
 [SAAS documentation](https://sass-lang.com/documentation/)
 
