@@ -11,6 +11,12 @@ npx live-server
 ### SAASS documentation (CSS framework)
 [SAAS documentation](https://sass-lang.com/documentation/)
 
+### WCAG (Quick Reference)
+[WCAG (Quick Reference)](https://www.w3.org/WAI/WCAG22/quickref/?currentsidebar=%23col_customize)
+
+### Web Accessibility Evaluation Tools List
+[Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/test-evaluate/tools/list/)
+
 **1. Validation Semantic HTML**
 
 Summary of Each Tool’s Unique Features:
