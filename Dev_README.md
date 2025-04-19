@@ -4,6 +4,11 @@
 npx live-server
 ```
 
+## To translate scss into css code from the project root directory:
+```bash
+sass ./src/scss/main.scss ./dist/main.css
+```
+
 ### BEM naming guide
 
 [BEM naming guide](https://getbem.com/naming/)

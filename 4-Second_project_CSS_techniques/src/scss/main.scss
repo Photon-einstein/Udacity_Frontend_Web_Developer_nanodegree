@@ -1,0 +1,19 @@
+// src/scss/main.scss
+
+// src/scss/base folder
+@use './base/resets';
+@use './base/base.scss';
+
+// src/scss/blocks folder
+@use './blocks/any_block_partial.scss';
+@use './blocks/footer.scss';
+@use './blocks/header.scss';
+@use './blocks/blocks.scss';
+
+// src/scss/utils folder
+@use './utils/mixins.scss';
+@use './utils/variables.scss';
+@use './utils/utils.scss';
+
+// src/scss folder
+@use './styles.scss';
