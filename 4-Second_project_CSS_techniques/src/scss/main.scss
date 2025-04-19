@@ -1,16 +1,16 @@
 // src/scss/main.scss
 
-// base folder
+// src/scss/base folder
 @use './base/resets';
 @use './base/base.scss';
 
-// blocks folder
+// src/scss/blocks folder
 @use './blocks/any_block_partial.scss';
 @use './blocks/footer.scss';
 @use './blocks/header.scss';
 @use './blocks/blocks.scss';
 
-// utils folder
+// src/scss/utils folder
 @use './utils/mixins.scss';
 @use './utils/variables.scss';
 @use './utils/utils.scss';
