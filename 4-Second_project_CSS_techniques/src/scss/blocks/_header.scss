@@ -1,20 +1,29 @@
 .header-banner {
   width: 100%;
   height: auto;
-  display: flex;
-  justify-content: center;
+  display: block;
   align-items: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
+  padding: 0;
+  margin: 0;
 
   &__banner-image {
-    height: auto;
-    max-width: 100vw;
-    object-fit: cover;
+    width: 100%;
+    object-fit: contain;
+    display: block;
   }
 
+}
+
+@media (min-width: 768px) {
+  .header-banner__banner-image {
+    height: 15%;
+    width: 100%;
   }
+}
+
 
 
