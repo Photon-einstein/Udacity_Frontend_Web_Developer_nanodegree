@@ -28,7 +28,52 @@ body {
 
 @media (min-width: 768px) {
   .header-banner__banner-image {
-    height: 15%;
+    height: 10%;
     width: 100%; } }
+.main__header {
+  margin: 0;
+  /* Remove any default margin */
+  padding: 10px 30px;
+  /* Optional: Add padding if needed */
+  text-align: center; }
+
+.bio-section {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0 30px;
+  /* padding around the header */
+  text-align: justify; }
+  .bio-section__content {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0 30px;
+    /* padding around the header */
+    text-align: justify; }
+  .bio-section__text {
+    width: 100%; }
+  .bio-section__profile-image {
+    width: 90%;
+    height: auto;
+    margin: 10px;
+    align-items: center; }
+  .bio-section__figcaption {
+    padding: 0 10px; }
+
+@media (max-width: 768px) {
+  .bio-section__content {
+    flex-direction: column; }
+
+  .bio-section__profile-image {
+    max-width: 100%;
+    height: auto;
+    display: block; } }
+@media (min-width: 768px) {
+  .bio-section__profile-image {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 20 auto; } }
 
 /*# sourceMappingURL=main.css.map */
