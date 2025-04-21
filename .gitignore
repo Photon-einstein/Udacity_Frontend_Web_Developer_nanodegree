@@ -1,2 +1,40 @@
 .vscode/
 **/.sass-cache/
+
+# Ignore node_modules if using npm or yarn
+node_modules/
+
+# Ignore dist or build output if you're compiling SCSS or bundling
+**/build/
+
+# Ignore SCSS cache
+.sass-cache/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE/editor-specific settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Environment variables
+.env
+
+# Compiled CSS maps (optional)
+*.css.map
+
+# Optional: ignore personal notes or backup files
+*.log
+*.bak
+*.tmp
+
+# Optional: ignore coverage reports (if using testing tools later)
+coverage/
