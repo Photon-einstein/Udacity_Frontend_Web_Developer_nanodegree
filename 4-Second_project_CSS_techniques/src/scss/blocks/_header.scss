@@ -1,0 +1,20 @@
+.header-banner {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  &__banner-image {
+    height: auto;
+    max-width: 100vw;
+    object-fit: cover;
+  }
+
+  }
+
+

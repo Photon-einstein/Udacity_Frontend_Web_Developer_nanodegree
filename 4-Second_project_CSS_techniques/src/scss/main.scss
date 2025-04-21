@@ -1,19 +1,19 @@
 // src/scss/main.scss
 
 // src/scss/base folder
-@use './base/resets';
-@use './base/base.scss';
+@import './base/resets';
+@import './base/base.scss';
 
 // src/scss/blocks folder
-@use './blocks/any_block_partial.scss';
-@use './blocks/footer.scss';
-@use './blocks/header.scss';
-@use './blocks/blocks.scss';
+@import './blocks/any_block_partial.scss';
+@import './blocks/footer.scss';
+@import './blocks/header.scss';
+@import './blocks/blocks.scss';
 
 // src/scss/utils folder
-@use './utils/mixins.scss';
-@use './utils/variables.scss';
-@use './utils/utils.scss';
+@import './utils/mixins.scss';
+@import './utils/variables.scss';
+@import './utils/utils.scss';
 
 // src/scss folder
-@use './styles.scss';
+@import './styles.scss';

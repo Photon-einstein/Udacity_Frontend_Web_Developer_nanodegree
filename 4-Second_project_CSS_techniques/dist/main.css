@@ -1,12 +1,33 @@
-@use './base/resets';
-@use './base/base.scss';
-@use './blocks/any_block_partial.scss';
-@use './blocks/footer.scss';
-@use './blocks/header.scss';
-@use './blocks/blocks.scss';
-@use './utils/mixins.scss';
-@use './utils/variables.scss';
-@use './utils/utils.scss';
-@use './styles.scss';
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Nimbus Mono PS', 'Courier New', Courier, monospace; }
+
+.bold {
+  font-weight: bold; }
+
+.header-banner {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden; }
+  .header-banner__banner-image {
+    height: auto;
+    max-width: 100vw;
+    object-fit: cover; }
+
+.bio-content {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0 30px;
+  /* padding around the header */
+  text-align: justify; }
 
 /*# sourceMappingURL=main.css.map */

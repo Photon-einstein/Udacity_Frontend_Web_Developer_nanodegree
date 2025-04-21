@@ -253,26 +253,43 @@ List of TODO`s to perform:
 2. Read the notes that I wrote of the project to get a clear start to the project (Done)
 3. Create structure for the skeleton scss to generate the css (Done)
 4. Add the notes for the BEM methodology to this document for consultation (Done)
-
 5. Add the html code for the first page (in progress)
-5.1. Make the banner section photo (Done)
-5.2. Make the profile image (Done)
-5.3. Make the content of the first page (Done)
+    5.1. Make the banner section photo (Done)
+    5.2. Make the profile image (Done)
+    5.3. Make the content of the first page (Done)
+    5.4. Make the footer of the first page (Done)
+6. Add the html code for the second page (Done)
+    6.1. Make the header section (Done)
+    6.2. Make the section latests projects (Done)
+    6.3. Make the footer of the second page (Done)
 
-6. Add the html code for the second page (in progress)
-6.1. Make the header section (TBD)
-6.2. Make the section latests projects (TBD)
-6.3. Make the footer (TBD)
+7. Add the CSS code for the first page (large and small screens) (in progress)
+    7.1.0. Make the styling of the body / html (in progress)
 
-7. Add the CSS code for the first page, large screens first (TBD)
-8. Add the CSS code for the first page, small screens (TBD)
-9. Add the CSS code for the second page, large screens first (TBD)
-10. Add the CSS code for the second page, large screens second (TBD)
-11. Run the W3C validation tool on the first page, and fix the problems that the tool found (TBD)
-12. Run the W3C validation tool on the second page, and fix the problems that the tool found (TBD)
-13. Check the required accessibility standards for A and AA at the following link 
+    7.1.1. Make the styling of the banner for large screens (Done)
+    7.1.2. Make the styling of the banner for small screens (Done)
+
+    7.2.1. Make the styling of the bio section for large screens (in progress)
+    
+    7.2.2. Make the styling of the bio section for small screens (TBD)
+    7.3.1. Make the styling of the footer section for large screens (TBD)
+    7.3.2. Make the styling of the footer section for small screens (TBD)
+
+8. Add the CSS code for the second page (large and small screens) (TBD)
+    8.1.0. Make the styling of the body / html (TBD)
+    8.1.1. Make the styling for the navigation header for large screens (TBD) --- similar to '.history-content' class
+    8.1.2. Make the styling for the navigation header for small screens (TBD)
+    8.2.1. Make the styling for the section of latest projects for large screens (TBD)
+    8.2.1. Make the styling for the section of latest projects for small screens (TBD)
+    8.3.1. Make the styling of the footer section for large screens (TBD)
+    8.3.2. Make the styling of the footer section for small screens (TBD)
+
+9. Add the CSS code for the second page, large screens second (TBD)
+10. Run the W3C validation tool on the first page, and fix the problems that the tool found (TBD)
+11. Run the W3C validation tool on the second page, and fix the problems that the tool found (TBD)
+12. Check the required accessibility standards for A and AA at the following link 
 [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/test-evaluate/tools/list/) 
 for the first page (TBD)
-14. Check the required accessibility standards for A and AA at the following link 
+13. Check the required accessibility standards for A and AA at the following link 
 [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/test-evaluate/tools/list/) 
 for the second page (TBD)
