@@ -1,0 +1,46 @@
+.button {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    color: #000;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+.bio-section__buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+
+.bio-section__latest-projects-button {
+    background-color: #17ac50;
+    align-items: left;
+    margin-left: 20px;
+
+    &:hover {
+        background-color: #117738;
+        filter: brightness(90%);
+    }
+}
+
+.bio-section__linkedin-button {
+    background-color: #1775ac;
+    align-items: right;
+    margin-right: 20px;
+
+    &:hover {
+        background-color: #145880;
+        filter: brightness(90%);
+    }
+}

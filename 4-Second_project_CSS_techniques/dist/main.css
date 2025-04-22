@@ -2,13 +2,24 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  font-family: 'Nimbus Mono PS', 'Courier New', Courier, monospace; }
+  font-family: 'Lato', sans-serif;
+  font-size: 24px; }
 
 .bold {
   font-weight: bold; }
 
 * {
   border: 1px solid red; }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111;
+    color: #eee; } }
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; } }
+.footer {
+  text-align: center; }
 
 .header-banner {
   width: 100%;
@@ -54,10 +65,10 @@ body {
   .bio-section__text {
     width: 100%; }
   .bio-section__profile-image {
-    width: 90%;
-    height: auto;
-    margin: 10px;
-    align-items: center; }
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    align-items: left; }
   .bio-section__figcaption {
     padding: 0 10px; }
 
@@ -75,5 +86,42 @@ body {
     height: auto;
     display: block;
     margin: 20 auto; } }
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px; } }
+.button {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  color: #000;
+  text-align: center; }
+
+@media (max-width: 768px) {
+  .button {
+    font-size: 14px;
+    padding: 8px 12px; } }
+.bio-section__buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px; }
+
+.bio-section__latest-projects-button {
+  background-color: #17ac50;
+  align-items: left;
+  margin-left: 20px; }
+  .bio-section__latest-projects-button:hover {
+    background-color: #117738;
+    filter: brightness(90%); }
+
+.bio-section__linkedin-button {
+  background-color: #1775ac;
+  align-items: right;
+  margin-right: 20px; }
+  .bio-section__linkedin-button:hover {
+    background-color: #145880;
+    filter: brightness(90%); }
 
 /*# sourceMappingURL=main.css.map */
