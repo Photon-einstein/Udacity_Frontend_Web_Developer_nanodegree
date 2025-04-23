@@ -38,3 +38,6 @@ yarn-error.log*
 
 # Optional: ignore coverage reports (if using testing tools later)
 coverage/
+
+# Others files
+*local_links.md
