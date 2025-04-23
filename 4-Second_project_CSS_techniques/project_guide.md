@@ -258,7 +258,7 @@ Example:
     6.3. Make the footer of the second page (Done)  
 
 7. Add the CSS code for the first page (large and small screens) (in progress)  
-    7.1.0. Make the styling of the body / html (in progress)  
+    7.1.0. Make the styling of the body / html (Done)  
 
     7.1.1. Make the styling of the banner for large screens (Done)  
     7.1.2. Make the styling of the banner for small screens (Done)  
