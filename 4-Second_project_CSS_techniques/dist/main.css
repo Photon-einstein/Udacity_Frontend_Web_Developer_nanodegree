@@ -1,4 +1,4 @@
-body {
+html, body {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -67,12 +67,15 @@ body {
     list-style-type: none;
     /* remove bullet points */
     font-size: 40px; }
+    .header-latest-projects-page__anchor:hover {
+      color: #072755;
+      background-color: #e7e7d3; }
 
 @media (min-width: 768px) {
   .header-banner__banner-image {
     height: 10%;
     width: 100%; } }
-@media (max-width: 950px) {
+@media (max-width: 768px) {
   .header-latest-projects-page__ul {
     flex-direction: column;
     align-items: center; }
@@ -81,7 +84,7 @@ body {
     margin: 10px; }
 
   .header-latest-projects-page__anchor {
-    font-size: 24px; } }
+    font-size: 20px; } }
 .main__header {
   margin: 0;
   /* Remove any default margin */
@@ -112,6 +115,27 @@ body {
     align-items: left; }
   .bio-section__figcaption {
     padding: 0 10px; }
+
+.section-group {
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  padding: 10px 0;
+  /* padding around the header */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0; }
+  .section-group h2 {
+    text-align: center; }
+  .section-group__projects {
+    max-width: 30vw;
+    flex-direction: column; }
+  .section-group__image {
+    max-width: 25vw; }
+  .section-group__anchor {
+    margin-top: auto;
+    align-self: center; }
 
 @media (max-width: 768px) {
   .bio-section__content {

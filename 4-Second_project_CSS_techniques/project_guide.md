@@ -274,11 +274,13 @@ Example:
 8. Add the CSS code for the second page (large and small screens) (in progress)  
     8.1.0. Make the styling of the body / html (Done)    
 
-    8.1.1. Make the styling for the navigation header for large screens (in progress)   
+    8.1.1. Make the styling for the navigation header for large screens (Done)   
+    8.1.2. Make the styling for the navigation header for small screens (Done)  
+
+    8.2.1. Make the styling for the section of the latest projects for large screens (in progress)  
     
-    8.1.2. Make the styling for the navigation header for small screens (TBD)  
-    8.2.1. Make the styling for the section of the latest projects for large screens (TBD)  
-    8.2.1. Make the styling for the section of the latest projects for small screens (TBD)  
+    8.2.1. Make the styling for the section of the latest projects for small screens (TBD)
+
     8.3.1. Make the styling of the footer section for large screens (TBD)  
     8.3.2. Make the styling of the footer section for small screens (TBD)  
 
