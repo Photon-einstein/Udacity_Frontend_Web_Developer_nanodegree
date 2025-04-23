@@ -124,4 +124,8 @@ body {
     background-color: #145880;
     filter: brightness(90%); }
 
+@media (prefers-color-scheme: dark) {
+  .button {
+    color: #eee; } }
+
 /*# sourceMappingURL=main.css.map */
