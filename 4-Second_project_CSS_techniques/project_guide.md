@@ -160,7 +160,7 @@ Apply these choices consistently to maintain a cohesive design.
 
 3. Set up the right structure of the folders for the scss (Done)
 
-4. Compile your CSS into a main.css file. Ensure that it compiles directly into the dist folder. (Done)
+4. Compile your CSS into a main.css file. Ensure that it compiles directly into the dist folder. (Done)  
 (Use the live preview to view the changes in real time)
 
 5. Build out your components: 
