@@ -3,7 +3,9 @@ body {
   width: 100%;
   margin: 0;
   font-family: 'Lato', sans-serif;
-  font-size: 24px; }
+  font-size: 30px;
+  background-color: #FFFFF0;
+  color: #000; }
 
 .bold {
   font-weight: bold; }
@@ -37,10 +39,49 @@ body {
     object-fit: contain;
     display: block; }
 
+.header-latest-projects-page {
+  display: flex;
+  /* Enable Flexbox */
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  /* padding around the header */
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  font-style: bold; }
+  .header-latest-projects-page__ul {
+    display: flex;
+    flex: auto;
+    /* Prevents it from growing or shrinking */ }
+  .header-latest-projects-page__li {
+    margin-left: 15vw;
+    /* space between links */
+    list-style-type: none;
+    /* remove bullet points */ }
+  .header-latest-projects-page__anchor {
+    color: #0b3775;
+    font-weight: bold;
+    margin-left: 5px;
+    /* space between links */
+    list-style-type: none;
+    /* remove bullet points */
+    font-size: 40px; }
+
 @media (min-width: 768px) {
   .header-banner__banner-image {
     height: 10%;
     width: 100%; } }
+@media (max-width: 950px) {
+  .header-latest-projects-page__ul {
+    flex-direction: column;
+    align-items: center; }
+
+  .header-latest-projects-page__li {
+    margin: 10px; }
+
+  .header-latest-projects-page__anchor {
+    font-size: 24px; } }
 .main__header {
   margin: 0;
   /* Remove any default margin */

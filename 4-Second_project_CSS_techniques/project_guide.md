@@ -272,8 +272,10 @@ Example:
     7.3.4. Run the W3C markup validator (Done)  
 
 8. Add the CSS code for the second page (large and small screens) (in progress)  
-    8.1.0. Make the styling of the body / html (TBD)  
-    8.1.1. Make the styling for the navigation header for large screens (TBD)   
+    8.1.0. Make the styling of the body / html (Done)    
+
+    8.1.1. Make the styling for the navigation header for large screens (in progress)   
+    
     8.1.2. Make the styling for the navigation header for small screens (TBD)  
     8.2.1. Make the styling for the section of the latest projects for large screens (TBD)  
     8.2.1. Make the styling for the section of the latest projects for small screens (TBD)  
