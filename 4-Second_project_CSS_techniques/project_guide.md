@@ -241,7 +241,7 @@ Example:
 ```
 -----------------------------------------------------------------------------------------------------------------------
 
-List of TODO`s to perform:
+**List of TODO`s to perform:**
 
 1. Get a clear understanding of the requirements of the project (Done)
 2. Read the notes that I wrote of the project to get a clear start to the project (Done)
