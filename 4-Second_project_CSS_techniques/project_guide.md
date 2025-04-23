@@ -36,7 +36,7 @@ Folder structure:
     store all CSS preprocessors folders and files here.
 
 
-Following the principle of the BEM methodology your scss folder will contain:
+Following the principle of the BEM methodology your SCSS folder will contain:
 
 - base: 
 
@@ -48,7 +48,7 @@ Following the principle of the BEM methodology your scss folder will contain:
 
 - utils: 
 
-    Includes reusable helper styles like variables, mixins (resusable blocks of code), and utility classes that support  
+    Includes reusable helper styles like variables, mixins (reusable blocks of code), and utility classes that support  
     the design system.
 
 
@@ -152,13 +152,13 @@ Banner and Latest Projects sections.
 
 Pay attention to spacing, alignment, and element placement as you will be evaluated on your ability to match the wireframe.
 
-2. Decide on a Visual Theme: Think about your site`s aesthetics.  
+2. Decide on a Visual Theme: Think about your site's aesthetics.  
 Will you use a light or dark theme?  
 What colors will you use for consistency?  
 How will your buttons look - rounded, flat or with shadows?  
 Apply these choices consistently to maintain a cohesive design.  
 
-3. Set up the right structure of the folders for the scss (Done)
+3. Set up the right structure of the folders for the SCSS (Done)
 
 4. Compile your CSS into a main.css file. Ensure that it compiles directly into the dist folder. (Done)  
 (Use the live preview to view the changes in real time)
@@ -175,7 +175,7 @@ and then any elements within those blocks, with modifiers if needed.
 * Test your site using accessibility tools like Lighthouse or WAVE.
 
 7. Style your components:
-* With the HTML components built and their classes assigned, create a partial file for each block.
+* With the HTML components built, and their classes assigned, create a partial file for each block.
 * Within each partial, recreate the appropriately nested structure based on BEM methodology. (See rubric for further help.)
 * Create any mixins of variables you might need. A good start would be to create variables for your colors and mixins for  
 media queries.
@@ -245,16 +245,16 @@ Example:
 
 1. Get a clear understanding of the requirements of the project (Done)
 2. Read the notes that I wrote of the project to get a clear start to the project (Done)
-3. Create structure for the skeleton scss to generate the css (Done)
+3. Create structure for the skeleton SCSS to generate the CSS (Done)
 4. Add the notes for the BEM methodology to this document for consultation (Done)
-5. Add the html code for the first page (in progress)
+5. Add the HTML code for the first page (in progress)
     5.1. Make the banner section photo (Done)  
     5.2. Make the profile image (Done)  
     5.3. Make the content of the first page (Done)  
     5.4. Make the footer of the first page (Done)  
-6. Add the html code for the second page (Done)  
+6. Add the HTML code for the second page (Done)  
     6.1. Make the header section (Done)  
-    6.2. Make the section latests projects (Done)  
+    6.2. Make the section the latest projects (Done)  
     6.3. Make the footer of the second page (Done)  
 
 7. Add the CSS code for the first page (large and small screens) (in progress)  
@@ -268,15 +268,15 @@ Example:
     7.2.2. Make the styling of the bio section for small screens (Done)  
     7.3.1. Make the styling of the footer section for large screens (Done)  
     7.3.2. Make the styling of the footer section for small screens (Done)  
-    7.3.3. Add two call to action buttons (Done)  
+    7.3.3. Add two call-to-action buttons (Done)  
     7.3.4. Run the W3C markup validator (Done)  
 
 8. Add the CSS code for the second page (large and small screens) (in progress)  
     8.1.0. Make the styling of the body / html (TBD)  
     8.1.1. Make the styling for the navigation header for large screens (TBD)   
     8.1.2. Make the styling for the navigation header for small screens (TBD)  
-    8.2.1. Make the styling for the section of latest projects for large screens (TBD)  
-    8.2.1. Make the styling for the section of latest projects for small screens (TBD)  
+    8.2.1. Make the styling for the section of the latest projects for large screens (TBD)  
+    8.2.1. Make the styling for the section of the latest projects for small screens (TBD)  
     8.3.1. Make the styling of the footer section for large screens (TBD)  
     8.3.2. Make the styling of the footer section for small screens (TBD)  
 
@@ -289,3 +289,4 @@ for the first page (TBD)
 13. Check the required accessibility standards for A and AA at the following link   
 [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/test-evaluate/tools/list/)   
 for the second page (TBD)  
+s
