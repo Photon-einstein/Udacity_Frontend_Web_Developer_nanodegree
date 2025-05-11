@@ -1,21 +1,16 @@
 .header-banner {
   width: 100%;
-  height: auto;
-  display: block;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   overflow: hidden;
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
 
-  &__banner-image {
-    width: 100%;
-    object-fit: contain;
-    display: block;
-  }
-
+.header-banner__banner-image {
+  width: 95%;
+  height: auto;
+  max-height: 15vh; /* Constrain height on all screens */
+  display: block;
+  object-fit: contain;
 }
 
 .header-latest-projects-page {
@@ -52,12 +47,6 @@
   }
 }
 
-@media (min-width: 768px) {
-  .header-banner__banner-image {
-    height: 10%;
-    width: 100%;
-  }
-}
 
 @media (max-width: 768px) {
   .header-latest-projects-page__ul {

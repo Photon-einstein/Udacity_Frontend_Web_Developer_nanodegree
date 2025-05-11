@@ -293,4 +293,3 @@ for the first page (TBD)
 13. Check the required accessibility standards for A and AA at the following link   
 [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/test-evaluate/tools/list/)   
 for the second page (TBD)  
-s
