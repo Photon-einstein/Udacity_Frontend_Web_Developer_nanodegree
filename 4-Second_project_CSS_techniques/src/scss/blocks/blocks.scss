@@ -58,10 +58,23 @@
         max-width: 25vw;
     }
 
-    &__anchor {
-        margin-top: auto;
-        align-self: center;
+    &__paragraph {
+        padding: 10px;
     }
+
+    &__anchor {
+        display: block;
+        width: fit-content; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        color: #0b3775;
+    }
+    &__anchor:hover {
+        color: #051d3d; /* Darker blue on hover for light mode */
+        text-decoration: underline;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -88,5 +101,14 @@
 @media(max-width: 768px) {
     h1 {
         font-size: 20px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+  .section-group__anchor {
+    color: #428d97;
+  }
+  .section-group__anchor:hover {
+    color: #6ed194; /* Lighter green on hover in dark mode */
     }
 }
