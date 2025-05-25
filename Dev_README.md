@@ -28,8 +28,10 @@ Summary of Each Tool’s Unique Features:
 
 * W3C Markup Validation Service: Ideal for ensuring HTML syntax is compliant with web standards. [W3C Markup Validator](https://validator.w3.org/)
 
-* Lighthouse: A comprehensive audit tool for performance, accessibility, SEO, and best practices. (extension)
+* Lighthouse: A comprehensive audit tool for performance, accessibility, SEO, and best practices. (extension, works with pages locally as well)
 
 * IBM Equal Access Accessibility Checker: A robust accessibility checker integrated into DevTools, focusing on WCAG compliance. (extension)
 
 * WAVE Evaluation Tool: Provides a user-friendly, visual accessibility audit, ideal for pinpointing issues directly on the page. (extension)
+
+* Web Accessability checker [WEB AIM](https://webaim.org/resources/contrastchecker/)

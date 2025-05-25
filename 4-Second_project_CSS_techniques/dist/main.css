@@ -10,9 +10,6 @@ html, body {
 .bold {
   font-weight: bold; }
 
-* {
-  border: 1px solid red; }
-
 @media (prefers-color-scheme: dark) {
   html, body {
     background-color: #111;
