@@ -14,14 +14,15 @@
 }
 
 .header-latest-projects-page {
-  display: flex; /* Enable Flexbox */
-  justify-content: center;
-  align-items: center;
+  @include flex-center; // Uses the default align-items: center
+  height: 10vh;
   padding: 10px 0; /* padding around the header */
   width: 100%;
   overflow: hidden;
   margin: 0;
   font-style: bold;
+
+  transition: height 0.3s ease, padding 0.3s ease;
 
   &__ul {
     display: flex;
@@ -39,16 +40,37 @@
     margin-left: 5px; /* space between links */
     list-style-type: none; /* remove bullet points */
     font-size: 40px;
+
+    transition: font-size 0.3s ease; // Transition for font size
     
     &:hover {
       color: #072755;
       background-color: rgb(231, 231, 211);
     }
+
+    &--scrolled {
+    height: 5vh; // Smaller height when scrolled (adjust as needed)
+    padding: 5px 0; // Reduce padding
+
+    .header-latest-projects-page__anchor {
+      font-size: 25px; // Smaller font size when scrolled (adjust as needed)
+    }
+  }
   }
 }
 
 
 @media (max-width: 768px) {
+  .header-latest-projects-page {
+    height: 20vh;
+    &--scrolled {
+      height: 10vh;
+      .header-latest-projects-page__anchor {
+        font-size: 18px; // Smaller mobile font size when scrolled
+      }
+    }
+  }
+
   .header-latest-projects-page__ul {
     flex-direction: column;
     align-items: center;
@@ -60,5 +82,11 @@
 
   .header-latest-projects-page__anchor {
     font-size: 20px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .header-latest-projects-page__anchor {
+    color: $text-color-dark-mode;
   }
 }
