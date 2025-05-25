@@ -39,15 +39,16 @@ html, body {
 
 .header-latest-projects-page {
   display: flex;
-  /* Enable Flexbox */
   justify-content: center;
   align-items: center;
+  height: 10vh;
   padding: 10px 0;
   /* padding around the header */
   width: 100%;
   overflow: hidden;
   margin: 0;
-  font-style: bold; }
+  font-style: bold;
+  transition: height 0.3s ease, padding 0.3s ease; }
   .header-latest-projects-page__ul {
     display: flex;
     flex: auto;
@@ -64,12 +65,25 @@ html, body {
     /* space between links */
     list-style-type: none;
     /* remove bullet points */
-    font-size: 40px; }
+    font-size: 40px;
+    transition: font-size 0.3s ease; }
     .header-latest-projects-page__anchor:hover {
       color: #072755;
       background-color: #e7e7d3; }
+    .header-latest-projects-page__anchor--scrolled {
+      height: 5vh;
+      padding: 5px 0; }
+      .header-latest-projects-page__anchor--scrolled .header-latest-projects-page__anchor {
+        font-size: 25px; }
 
 @media (max-width: 768px) {
+  .header-latest-projects-page {
+    height: 20vh; }
+    .header-latest-projects-page--scrolled {
+      height: 10vh; }
+      .header-latest-projects-page--scrolled .header-latest-projects-page__anchor {
+        font-size: 18px; }
+
   .header-latest-projects-page__ul {
     flex-direction: column;
     align-items: center; }
@@ -79,6 +93,9 @@ html, body {
 
   .header-latest-projects-page__anchor {
     font-size: 20px; } }
+@media (prefers-color-scheme: dark) {
+  .header-latest-projects-page__anchor {
+    color: #eee; } }
 .main__header {
   margin: 0;
   /* Remove any default margin */
@@ -89,6 +106,7 @@ html, body {
 .bio-section {
   display: flex;
   justify-content: center;
+  align-items: normal;
   margin: 0;
   padding: 0 30px;
   /* padding around the header */
@@ -96,6 +114,7 @@ html, body {
   .bio-section__content {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0 30px;
     /* padding around the header */
@@ -143,28 +162,35 @@ html, body {
 
 @media (max-width: 768px) {
   .bio-section__content {
-    flex-direction: column; }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
 
   .bio-section__profile-image {
     max-width: 100%;
     height: auto;
-    display: block; } }
+    display: block; }
+
+  .section-group {
+    flex-direction: column; }
+    .section-group__image {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto; }
+
+  h1 {
+    font-size: 20px; } }
 @media (min-width: 768px) {
   .bio-section__profile-image {
     max-width: 70%;
     height: auto;
     display: block;
     margin: 20 auto; } }
-@media (max-width: 768px) {
-  h1 {
-    font-size: 20px; } }
 @media (prefers-color-scheme: dark) {
   .section-group__anchor {
-    color: #428d97; }
-
-  .section-group__anchor:hover {
-    color: #6ed194;
-    /* Lighter green on hover in dark mode */ } }
+    color: #eee; } }
 .button {
   padding: 10px 20px;
   text-decoration: none;
@@ -193,7 +219,7 @@ html, body {
     filter: brightness(90%); }
 
 .bio-section__linkedin-button {
-  background-color: #1775ac;
+  background-color: #a5a712;
   align-items: right;
   margin-right: 20px; }
   .bio-section__linkedin-button:hover {

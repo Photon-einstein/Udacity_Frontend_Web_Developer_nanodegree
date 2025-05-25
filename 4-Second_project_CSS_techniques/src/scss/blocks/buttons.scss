@@ -35,7 +35,7 @@
 }
 
 .bio-section__linkedin-button {
-    background-color: #1775ac;
+    background-color: #a5a712;
     align-items: right;
     margin-right: 20px;
 
@@ -47,6 +47,6 @@
 
 @media (prefers-color-scheme: dark) {
     .button {
-      color: #eee;
+      color: $text-color-dark-mode;
     }
   }

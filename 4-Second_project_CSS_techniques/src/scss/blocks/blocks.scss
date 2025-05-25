@@ -5,15 +5,13 @@
 }
 
 .bio-section {
-    display: flex;
-    justify-content: center;
+    @include flex-center($align-items: normal);
     margin: 0;
     padding: 0 30px; /* padding around the header */
     text-align: justify;
 
     &__content {
-        display: flex;
-        justify-content: center;
+        @include flex-center;
         margin: 0;
         padding: 0 30px; /* padding around the header */
         text-align: justify;
@@ -36,9 +34,7 @@
 }
 
 .section-group {
-    display: flex;
-    justify-content: center;
-    align-items: normal;
+    @include flex-center($align-items: normal);
     padding: 10px 0; /* padding around the header */
     width: 100%;
     height: 100%;
@@ -79,13 +75,28 @@
 
 @media (max-width: 768px) {
     .bio-section__content {
-      flex-direction: column;
+      @include flex-column-center;
     }
   
     .bio-section__profile-image {
       max-width: 100%;
       height: auto;
       display: block;
+    }
+
+    .section-group {
+      flex-direction: column;
+      
+        &__image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    h1 {
+        font-size: 20px;
     }
 }
 
@@ -98,17 +109,8 @@
     }
 }
 
-@media(max-width: 768px) {
-    h1 {
-        font-size: 20px;
-    }
-}
-
 @media (prefers-color-scheme: dark) {
   .section-group__anchor {
-    color: #428d97;
+    color: $text-color-dark-mode;
   }
-  .section-group__anchor:hover {
-    color: #6ed194; /* Lighter green on hover in dark mode */
-    }
 }

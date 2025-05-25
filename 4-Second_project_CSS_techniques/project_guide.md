@@ -277,19 +277,26 @@ Example:
     8.1.1. Make the styling for the navigation header for large screens (Done)   
     8.1.2. Make the styling for the navigation header for small screens (Done)  
 
-    8.2.1. Make the styling for the section of the latest projects for large screens (in progress)  
+    8.2.1. Make the styling for the section of the latest projects for large screens (Done)  
     
-    8.2.1. Make the styling for the section of the latest projects for small screens (TBD)
+    8.2.2. Make the styling for the section of the latest projects for small screens (Done)
 
-    8.3.1. Make the styling of the footer section for large screens (TBD)  
-    8.3.2. Make the styling of the footer section for small screens (TBD)  
+    8.3.1. Make the styling of the footer section for large screens (Done)  
+    8.3.2. Make the styling of the footer section for small screens (Done)  
 
-9. Add the CSS code for the second page, large screens second (TBD)  
-10. Run the W3C validation tool on the first page, and fix the problems that the tool found (TBD)  
-11. Run the W3C validation tool on the second page, and fix the problems that the tool found (TBD)  
+9. Add the CSS code for the second page, large screens second (Done)
+10. Run the W3C validation tool on the first page, and fix the problems that the tool found (Done)  
+
+11. Run the W3C validation tool on the second page, and fix the problems that the tool found (Done)
+
 12. Check the required accessibility standards for A and AA at the following link  
 [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/test-evaluate/tools/list/)   
-for the first page (TBD)  
+for the first page (Done)
+
 13. Check the required accessibility standards for A and AA at the following link   
 [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/test-evaluate/tools/list/)   
-for the second page (TBD)  
+for the second page (Done)
+
+14. Prepare all the documents to submit (in progress)
+
+15. Submit (TBD)
