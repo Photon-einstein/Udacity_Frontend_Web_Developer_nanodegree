@@ -17,3 +17,4 @@
 6.1. Read the content of the file 'aboutMeData.json' into a global variable. (Done)
 6.2. Read the content of the file 'projectsData.json' into a global variable. (Done)
 
+7. Add the content into the 'aboutMe' container (Done)
