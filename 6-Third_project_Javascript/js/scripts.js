@@ -48,22 +48,31 @@ async function initialization() {
         ]);
         console.log("All data files loaded successfully. Ready to build UI.");
         await buildAboutMeDiv();
+        await buildProjectListDiv();
     }
     catch(error) {
         console.error("Failed in the initialization phase: ", error);
     }
 }
 const buildAboutMeDiv = async() => {
+    if (!aboutMeDataContainer || Object.keys(aboutMeDataContainer).length === 0) {
+        console.error("Error: 'aboutMeDataContainer' is not loaded or is empty.");
+        return; // Exit if data is not available
+    }
     const aboutMeDiv = document.querySelector("#aboutMe");
+    if(!aboutMeDiv) {
+        console.error("Error: Element with ID '#aboutMe' not found in the DOM.");
+        return;
+    }
     // create and populate a new paragraph
     const bioParagraph = document.createElement('p');
-    bioParagraph.textContent = aboutMeDataContainer.aboutMe;
+    bioParagraph.textContent = aboutMeDataContainer.aboutMe || "About me information not available.";
     // create a new div for a picture
     const pictureDiv = document.createElement('div')
     pictureDiv.classList.add('headshotContainer')
     // create and populate a new image
     const imgAboutMeDiv = document.createElement('img');
-    imgAboutMeDiv.src = aboutMeDataContainer.headshot;
+    imgAboutMeDiv.src = aboutMeDataContainer.headshot || 'https://placehold.co/800?text=Profile+Pic';
     imgAboutMeDiv.alt = "profilePic"
     pictureDiv.append(imgAboutMeDiv)
     // create document fragment
@@ -72,52 +81,77 @@ const buildAboutMeDiv = async() => {
     documentFragment.append(pictureDiv)
     // add new document fragment to the already existing section div
     aboutMeDiv.append(documentFragment)
+    console.log("'aboutMe' section built successfully.");
+}
 
-    // const titleDiv = document.querySelector('body').firstElementChild;
-    // titleDiv.classList.add('title')
-    // // Add card container if to the section div
-    // const sectionDiv = document.querySelector('section');
-    // sectionDiv.id = 'cardContainer'
-    // // Create profile card
-    // const profileCardDiv = document.createElement('div')
-    // profileCardDiv.classList.add('profileCard')
-    // // Create div for profile picture
-    // const pictureFrameDiv = document.createElement('div')
-    // pictureFrameDiv.classList.add('picFrame')
-    // // Create image inside class 'picframe' of div
-    // const imgDiv = document.createElement('img')
-    // imgDiv.src = "./images/otter_profile.webp"
-    // imgDiv.alt = "'profilePic"
-    // // append imgDiv into pictureFrameDiv and the last one into profileCardDiv
-    // pictureFrameDiv.append(imgDiv)
-    // profileCardDiv.append(pictureFrameDiv)
-    // // Create div with class 'userInfo'
-    // const userInfoDiv = document.createElement('div')
-    // userInfoDiv.classList.add('userInfo')
-    // // Add content to div with class 'userInfo'
-    // const simpleDiv = document.createElement('div')
-    // const header2 = document.createElement('h2')
-    // const paragraph = document.createElement('p')
-    // paragraph.textContent = "Hi! My name is Whiskers McOtter and I'm from Seattle, Washington. Some of my favorite things are\
-    //                     Frappuccinos and fish."
-    // simpleDiv.append(header2)
-    // simpleDiv.append(paragraph)
-    // userInfoDiv.append(simpleDiv)
-    // // Create simple div with button
-    // const buttonDiv = document.createElement('div')
-    // const button = document.createElement('button')
-    // button.classList.add('active')
-    // button.textContent="Online now!"
-    // buttonDiv.append(button)
-    // // Add button to div with 'userInfo' class
-    // userInfoDiv.append(buttonDiv)
-    // // userInfoDiv to profileCardDiv
-    // profileCardDiv.append(userInfoDiv)
-    // // create document fragment
-    // const documentFragment = document.createDocumentFragment()
-    // documentFragment.append(profileCardDiv)
-    // // add new document fragment to the already existing section div
-    // sectionDiv.append(documentFragment)
+const buildProjectListDiv = async() => {
+    if (!projectsDataContainer || Object.keys(projectsDataContainer).length === 0) {
+        console.error("Error: 'projectsDataContainer' is not loaded or is empty.");
+        return; // Exit if data is not available
+    }
+    const projectListDiv = document.querySelector("#projectList");
+    if(!projectListDiv) {
+        console.error("Error: Element with ID '#projectList' not found in the DOM.");
+        return;
+    }
+    // create document fragment
+    const documentFragment = document.createDocumentFragment();
+    const defaultBackgroundCardImage = 'https://placehold.co/200'
+    // loop through the data
+    projectsDataContainer.forEach(project => {
+        const projectDiv = document.createElement('div');
+        projectDiv.classList.add('projectCard');
+        // project_id
+        if(project.project_id) {
+            projectDiv.id = project.project_id;
+        } else {
+            console.warn(`Project missing 'project_id', cannot set ID for project: ${project.project_name || 'Unnamed Project'}`);
+        }
+        // project_name
+        const projectNameDiv = document.createElement('h4');
+        if(project.project_name) {
+            projectNameDiv.textContent = project.project_name;
+        } else {
+            console.warn(`Project missing 'project_name', cannot set name for project: ${project.project_id || 'Unidentified Project'}`);
+        }
+        // project short_description
+        const projectShortDescriptionDiv = document.createElement('p');
+        if(project.short_description) {
+            projectShortDescriptionDiv.textContent = project.short_description;
+        } else {
+            console.warn(`Project missing 'short_description', cannot set short_description for project: ${project.project_name || 'Unnamed Project'}`);
+        }
+        // project long description
+        const projectLongDescriptionDiv = document.createElement('p');
+        if(project.long_description) {
+            projectLongDescriptionDiv.textContent = project.long_description;
+        } else {
+            console.warn(`Project missing 'long_description', cannot set long_description for project: ${project.project_name || 'Unnamed Project'}`);
+        }
+        // card image
+        const imagePath = project.card_image || defaultBackgroundCardImage;
+        projectDiv.style.backgroundImage = `url('${imagePath}')`;
+        projectDiv.style.backgroundSize = 'cover';
+        projectDiv.style.backgroundPosition = 'center';
+        projectDiv.style.backgroundRepeat = 'no-repeat';
+        // project url
+        const projectLink = document.createElement('a');
+        projectLink.href = project.url || '#'; // Use project.url from JSON
+        projectLink.target = '_blank'; // Opens in a new tab
+        projectLink.rel = 'noopener noreferrer'; // Security for _blank
+
+        // append the new elements to the new project card div
+        projectDiv.append(projectNameDiv);
+        projectDiv.append(projectShortDescriptionDiv);
+        projectDiv.append(projectLongDescriptionDiv);
+        projectLink.append(projectDiv);
+        // append the fully constructed project card div to the document fragment
+        documentFragment.append(projectLink);
+    });
+    // append the entire fragment to the sidebar
+    projectListDiv.append(documentFragment);
+
+    console.log("'projectList' section built successfully.");
 }
 
 initialization();

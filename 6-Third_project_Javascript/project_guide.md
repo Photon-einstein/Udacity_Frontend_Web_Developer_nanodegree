@@ -1,9 +1,7 @@
 # Tasks:
 
 1. Read the html code, file: 'index.html' (Done)
-
 2. Read the CSS code (Done)
-
 3. Read the data documents: (in progress)
     - aboutMeData.json (Done)
     - projectsData.json (Done)
@@ -17,4 +15,10 @@
 6.1. Read the content of the file 'aboutMeData.json' into a global variable. (Done)
 6.2. Read the content of the file 'projectsData.json' into a global variable. (Done)
 
-7. Add the content into the 'aboutMe' container (Done)
+7. Add the content into the 'aboutMe' container ID (Done)
+8. Add more code to the 'buildAboutMeDiv' JS method to enable it to be more resilient to errors. (Done)
+9. Add the content into the 'projectList' container ID (Done)
+
+10. Add more code to the 'projectList' JS method to enable it to be more resilient to errors. (in progress)
+
+99. Split the main.js file into modular files, split by functionality, with a single entry point in a 'main.js' file.
