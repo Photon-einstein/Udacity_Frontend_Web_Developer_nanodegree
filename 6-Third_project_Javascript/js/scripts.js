@@ -72,7 +72,8 @@ const buildAboutMeDiv = async() => {
     pictureDiv.classList.add('headshotContainer')
     // create and populate a new image
     const imgAboutMeDiv = document.createElement('img');
-    imgAboutMeDiv.src = aboutMeDataContainer.headshot || 'https://placehold.co/800?text=Profile+Pic';
+    const defaultHeadshotImage = '../images/default_headshot.webp';
+    imgAboutMeDiv.src = aboutMeDataContainer.headshot || defaultHeadshotImage;
     imgAboutMeDiv.alt = "profilePic"
     pictureDiv.append(imgAboutMeDiv)
     // create document fragment
@@ -96,7 +97,7 @@ const buildProjectListDiv = async() => {
     }
     // create document fragment
     const documentFragment = document.createDocumentFragment();
-    const defaultBackgroundCardImage = 'https://placehold.co/200'
+    const defaultBackgroundCardImage = '../images/default_card.webp';
     // loop through the data
     projectsDataContainer.forEach(project => {
         const projectDiv = document.createElement('div');
@@ -145,7 +146,7 @@ const buildProjectListDiv = async() => {
         projectDiv.append(projectShortDescriptionDiv);
         projectDiv.append(projectLongDescriptionDiv);
         projectLink.append(projectDiv);
-        // append the fully constructed project card div to the document fragment
+        // append the fully constructed project card link to the document fragment
         documentFragment.append(projectLink);
     });
     // append the entire fragment to the sidebar
