@@ -49,6 +49,7 @@ async function initialization() {
         console.log("All data files loaded successfully. Ready to build UI.");
         await buildAboutMeDiv();
         await buildProjectListDiv();
+        await setupProjectNavigation();
     }
     catch(error) {
         console.error("Failed in the initialization phase: ", error);
@@ -153,6 +154,73 @@ const buildProjectListDiv = async() => {
     projectListDiv.append(documentFragment);
 
     console.log("'projectList' section built successfully.");
+}
+
+const isMobileLayout = () => {
+    const projectSection = document.querySelector("#projectSection");
+    if(projectSection) {
+        const computedStyle = window.getComputedStyle(projectSection);
+        return computedStyle.flexDirection === 'column';
+    }
+    return window.innerWidth <= 768;
+}
+
+const checkScrollPosition = () => {
+    if (isMobileLayout()) {
+        // Horizontal scroll
+        arrowLeft.style.opacity = projectListElement.scrollLeft > 0 ? '1' : '0.5';
+        arrowRight.style.opacity = (projectListElement.scrollWidth - projectListElement.scrollLeft - projectListElement.clientWidth) > 1 ? '1' : '0.5';
+    } else {
+        // Vertical scroll
+        arrowLeft.style.opacity = projectListElement.scrollTop > 0 ? '1' : '0.5';
+        arrowRight.style.opacity = (projectListElement.scrollHeight - projectListElement.scrollTop - projectListElement.clientHeight) > 1 ? '1' : '0.5';
+    }
+};
+
+const setupProjectNavigation = () => {
+    const projectListElement = document.querySelector("#projectList");
+    const arrowLeft = document.querySelector(".arrow-left");
+    const arrowRight = document.querySelector(".arrow-right");
+    if(!projectListElement || !arrowLeft || !arrowRight) {
+        console.error("Error: Project list or navigation arrows were not found. It is not possible to setup the navigation.");
+    }
+    // scroll amount 
+    const scrollAmountHorizontal = 250; // pixels to scroll horizontally
+    const scrollAmountVertical = 250; // pixels to scroll vertically
+    
+    arrowLeft.addEventListener('click', () => {
+        if(isMobileLayout()) {
+            // Mobile: scroll left
+            projectListElement.scrollBy({
+                left: -scrollAmountHorizontal,
+                behavior: 'smooth'
+            })
+        } else {
+            // Desktop: scroll up
+            projectListElement.scrollBy({
+                top: -scrollAmountVertical,
+                behavior: 'smooth'
+            })
+        }
+    })
+
+    arrowRight.addEventListener('click', () => {
+        if(isMobileLayout()) {
+            // Mobile: scroll right
+            projectListElement.scrollBy({
+                left: scrollAmountHorizontal,
+                behavior: 'smooth'
+            })
+        } else {
+            // Desktop: scroll down
+            projectListElement.scrollBy({
+                top: scrollAmountVertical,
+                behavior: 'smooth'
+            })
+        }
+    })
+
+    console.log("Project navigation setup successfully.");
 }
 
 initialization();
