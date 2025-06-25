@@ -18,7 +18,8 @@
 7. Add the content into the 'aboutMe' container ID (Done)
 8. Add more code to the 'buildAboutMeDiv' JS method to enable it to be more resilient to errors. (Done)
 9. Add the content into the 'projectList' container ID (Done)
+10. Add more code to the 'projectList' JS method to enable it to be more resilient to errors. (Done)
 
-10. Add more code to the 'projectList' JS method to enable it to be more resilient to errors. (in progress)
+11. Add the content into the 'projectNavArrows' container ID (in progress)
 
 99. Split the main.js file into modular files, split by functionality, with a single entry point in a 'main.js' file.
