@@ -26,5 +26,3 @@ async function initialization() {
 
 // start the application
 initialization();
-
-

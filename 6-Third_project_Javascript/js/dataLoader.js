@@ -1,3 +1,5 @@
+// js/dataLoader.js
+
 // Global data containers
 const aboutMeDataFileLocation = 'data/aboutMeData.json';
 const projectsDataFileLocation = 'data/projectsData.json';
