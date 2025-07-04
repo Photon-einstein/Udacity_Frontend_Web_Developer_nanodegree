@@ -1,3 +1,5 @@
+// js/projects.js
+
 import { projectsDataContainer } from './dataLoader.js';
 
 // Function to update the project spotlight
@@ -11,7 +13,7 @@ const updateProjectSpotlight = (project) => {
     }
 
     // Set Background Image
-    const defaultSpotlightImage = '../images/default_spotlight.webp'; // Create this placeholder!
+    const defaultSpotlightImage = '../images/default_spotlight.webp';
     const imageUrl = project.spotlight_image || defaultSpotlightImage;
 
     projectSpotlightDiv.style.backgroundImage = `url('${imageUrl}')`;
@@ -19,8 +21,8 @@ const updateProjectSpotlight = (project) => {
     projectSpotlightDiv.style.backgroundPosition = 'center';
     projectSpotlightDiv.style.backgroundRepeat = 'no-repeat';
 
-    // --- Populate Spotlight Titles ---
-    spotlightTitlesDiv.innerHTML = ''; // Clear previous content
+    // Populate Spotlight Titles
+    spotlightTitlesDiv.innerHTML = '';
 
     const spotlightProjectName = document.createElement('h3');
     spotlightProjectName.textContent = project.project_name || 'Project Name Not Available';
@@ -60,13 +62,12 @@ const buildProjectListDiv = async () => {
     projectsDataContainer.forEach(project => {
         const projectDiv = document.createElement('div');
         projectDiv.classList.add('projectCard');
-        // Store project data directly on the element for easy access by Intersection Observer
+
         projectDiv.dataset.projectId = project.project_id;
         projectDiv.dataset.projectName = project.project_name;
         projectDiv.dataset.projectLongDescription = project.long_description;
         projectDiv.dataset.projectSpotlightImage = project.spotlight_image;
         projectDiv.dataset.projectUrl = project.url;
-
 
         if (project.project_id) {
             projectDiv.id = project.project_id;
@@ -95,7 +96,7 @@ const buildProjectListDiv = async () => {
 
         projectDiv.append(projectNameDiv);
         projectDiv.append(projectShortDescriptionDiv);
-        documentFragment.append(projectDiv); // Append projectDiv directly
+        documentFragment.append(projectDiv);
     });
 
     projectListDiv.append(documentFragment);
@@ -111,7 +112,6 @@ const buildProjectListDiv = async () => {
             firstCard.classList.add('active');
         }
     }
-
     // Setup Intersection Observer for scrolling sync
     setupProjectSpotlightScrollSync();
 };
@@ -132,11 +132,9 @@ const setupProjectNavigation = () => {
 
     if (!projectListElement || !arrowLeft || !arrowRight) {
         console.error("Error: Project list or navigation arrows were not found. It is not possible to setup the navigation.");
-        return; // Exit if elements are missing
+        return;
     }
 
-    // Scroll amount should ideally be dynamic based on card width/height + gap
-    // For now, let's keep your fixed values, but be aware
     const scrollAmountHorizontal = 250;
     const scrollAmountVertical = 250;
 
@@ -183,11 +181,7 @@ const setupProjectSpotlightScrollSync = () => {
         let highestRatio = 0;
 
         entries.forEach(entry => {
-            // Only consider elements that are currently intersecting
             if (entry.isIntersecting) {
-                // For horizontal scrolling (mobile), check if it's the "most" visible horizontally
-                // For vertical scrolling (desktop), check if it's the "most" visible vertically
-                // This simple approach uses intersectionRatio
                 if (entry.intersectionRatio > highestRatio) {
                     highestRatio = entry.intersectionRatio;
                     currentBestMatch = entry.target;
@@ -212,7 +206,7 @@ const setupProjectSpotlightScrollSync = () => {
     };
 
      const observerOptions = {
-        root: projectListElement, // Observe intersection within the #projectList container
+        root: projectListElement,
         rootMargin: '0px',
         // Trigger callback when 80% of the element is visible
         threshold: 0.8

@@ -1,4 +1,4 @@
-
+// js/contactForm.js
 
 // Contact form validation
 const setupContactFormValidation = () => {
