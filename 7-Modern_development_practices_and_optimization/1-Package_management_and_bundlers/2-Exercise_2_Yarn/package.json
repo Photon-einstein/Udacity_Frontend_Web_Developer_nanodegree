@@ -1,0 +1,13 @@
+{
+  "name": "yarn_initialization",
+  "version": "1.0.0",
+  "description": "Introduction to Yarn",
+  "main": "index.js",
+  "author": "Tiago Sousa",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "mocha": "^11.7.1"
+  }
+}
