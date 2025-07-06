@@ -35,3 +35,9 @@ Summary of Each Tool’s Unique Features:
 * WAVE Evaluation Tool: Provides a user-friendly, visual accessibility audit, ideal for pinpointing issues directly on the page. (extension)
 
 * Web Accessability checker [WEB AIM](https://webaim.org/resources/contrastchecker/)
+
+### Webpack documentation page
+[Webpack documentation page](https://webpack.js.org/)
+
+### Parcel documentation page
+[Parcel documentation page](https://parceljs.org/docs/)

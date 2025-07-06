@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("This function is from file One!"),console.log("This function is from file Two!")})();
