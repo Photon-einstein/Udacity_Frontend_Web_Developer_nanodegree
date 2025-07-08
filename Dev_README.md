@@ -80,3 +80,30 @@ Summary of Each Tool’s Unique Features:
 * Focuses on task runner capabilities: Primarily used for task orchestration rather than module bundling (a role typically handled by Webpack/Parcel).
 
 [Gulp documentation page](https://gulpjs.com/)
+
+### Mocha documentation page
+* JavaScript test framework: Provides a robust structure for writing and organizing unit and integration tests.
+* Flexible and extensible: Doesn't dictate assertion or mocking libraries, allowing developers to choose their preferred tools (e.g., Chai, Sinon.js).
+* Supports various testing styles: Accommodates behavior-driven development (BDD) and test-driven development (TDD) interfaces.
+* Run tests in diverse environments: Can execute tests in Node.js, browsers, and other JavaScript runtimes.
+* Provides clear test reporting: Outputs detailed results indicating successes, failures, and test durations.
+
+[Mocha documentation page](https://mochajs.org/)
+
+## Chai documentation page
+* Assertion library for JavaScript: Provides a rich set of functions to declare how tests should behave and verify outcomes.
+* Works seamlessly with test frameworks: Commonly paired with testing frameworks like Mocha or Jest.
+* Offers multiple assertion styles: Supports BDD styles (expect and should) and a TDD style (assert) for developer preference.
+* Enhances test readability: Allows for highly expressive and human-readable test assertions (e.g., expect(foo).to.be.a('string');).
+* Extensible with plugins: Can be extended with third-party plugins to add custom assertions for specific needs.
+
+[Chai documentation page](https://www.chaijs.com/)
+
+## Cypress documentation page
+* End-to-End Test Automation: Primarily used for writing fast, reliable, and consistent end-to-end tests for web applications.
+* Developer-Friendly Experience: Runs directly in the browser, offering real-time reloads, time-travel debugging, and clear command logging.
+* Automatic Waiting: Intelligently waits for DOM elements and network requests, reducing flakiness without manual waits.
+* Component and API Testing: Can also be used for isolated component testing and making direct API requests for integration tests.
+* Interactive Debugging: Provides a visual test runner with developer tools integration for easy debugging of test failures.
+
+[Cypress documentation page](https://docs.cypress.io/app/get-started/why-cypress)
