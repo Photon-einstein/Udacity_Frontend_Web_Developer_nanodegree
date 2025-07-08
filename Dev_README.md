@@ -98,3 +98,12 @@ Summary of Each Tool’s Unique Features:
 * Extensible with plugins: Can be extended with third-party plugins to add custom assertions for specific needs.
 
 [Chai documentation page](https://www.chaijs.com/)
+
+## Cypress documentation page
+* End-to-End Test Automation: Primarily used for writing fast, reliable, and consistent end-to-end tests for web applications.
+* Developer-Friendly Experience: Runs directly in the browser, offering real-time reloads, time-travel debugging, and clear command logging.
+* Automatic Waiting: Intelligently waits for DOM elements and network requests, reducing flakiness without manual waits.
+* Component and API Testing: Can also be used for isolated component testing and making direct API requests for integration tests.
+* Interactive Debugging: Provides a visual test runner with developer tools integration for easy debugging of test failures.
+
+[Cypress documentation page](https://docs.cypress.io/app/get-started/why-cypress)

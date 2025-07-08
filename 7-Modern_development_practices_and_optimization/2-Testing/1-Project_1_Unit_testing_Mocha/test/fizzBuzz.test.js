@@ -6,16 +6,23 @@ describe("FizzBuzz Function", () => {
   it("Should return 'FizzBuzz' if the input is divisible by 3 and 5", () => {
     expect(fizzBuzz(15)).to.equal("FizzBuzz");
     expect(fizzBuzz(30)).to.equal("FizzBuzz");
+    expect(fizzBuzz(45)).to.equal("FizzBuzz");
+    const result = fizzBuzz(60);
+    expect(result).to.equal("FizzBuzz");
   });
 
   it("should return 'Fizz' if the input is only divisible by 3", () => {
     expect(fizzBuzz(3)).to.equal("Fizz");
     expect(fizzBuzz(9)).to.equal("Fizz");
+    const result = fizzBuzz(12);
+    expect(result).to.equal("Fizz");
   });
 
   it("should return 'Buzz' if the input is only divisible by 5", () => {
     expect(fizzBuzz(5)).to.equal("Buzz");
     expect(fizzBuzz(10)).to.equal("Buzz");
+    const result = fizzBuzz(20);
+    expect(result).to.equal("Buzz");
   });
 
   it("should return false when the argument is not a number", () => {
@@ -23,5 +30,7 @@ describe("FizzBuzz Function", () => {
     expect(fizzBuzz("123")).to.be.false;
     expect(fizzBuzz(true)).to.be.false;
     expect(fizzBuzz([])).to.be.false;
+    const result = fizzBuzz({});
+    expect(result).to.be.false;
   });
 });

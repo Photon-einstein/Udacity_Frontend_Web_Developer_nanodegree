@@ -6,7 +6,11 @@
   "scripts": {
     "test": "mocha"
   },
-  "author": "Your name here",
+  "author": "Tiago Sousa",
   "license": "MIT",
-  "description": "Making unit tests with mocha"
+  "description": "Making unit tests with mocha",
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "mocha": "^11.7.1"
+  }
 }
