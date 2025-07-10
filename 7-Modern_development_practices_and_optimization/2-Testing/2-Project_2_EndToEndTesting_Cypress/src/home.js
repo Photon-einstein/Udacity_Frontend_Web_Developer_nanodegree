@@ -6,7 +6,7 @@ export const renderHomePage = () => {
   document.querySelector("main").innerHTML = `
 
   <div class="parallax">
-    <h1>Professional Phography</h1>
+    <h1>Professional Photography</h1>
   </div>
 
   <div class="content">

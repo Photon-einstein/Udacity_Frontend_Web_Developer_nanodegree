@@ -83,24 +83,24 @@ const renderPriceEstimateForm = (photoData) => {
 };
 
 const handleCalculatePrice = (e) => {
-  //Prevents forms default behavor to refresh the page
+  //Prevents forms default behavior to refresh the page
   e.preventDefault()
   const photoArray = [];
   //Selects all of the inputs from the form
   const inputs = e.target.querySelectorAll("input[type='number']")
   //Iterates through the form
   inputs.forEach(input => {
-    //Gets the lable for the form
+    //Gets the label for the form
     const label = form.querySelector(`label[for="${input.id}"]`);
     //Checks the input for a value 
-    //If found keys and values will be estracted form the lable and input
+    //If found keys and values will be extracted form the label and input
   
     if (label && input.value > 0) {
       const labelText = label.textContent;
       const [type, details] = labelText.split(" (");
       const [size, priceText] = details.split(") - $");
       const basePricePerCopy = parseFloat(priceText.split(" ")[0]);
-      //photo object created and formated 
+      //photo object created and formatted 
       const photoOrder = {
         type: type.trim(),
         size: size.trim(),
