@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.child:last-child {
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  font-size: 1em;
+}
+
+form {
+  border: solid #afadad;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+}
+
+input, label {
+  text-align: start;
+  margin: 5px 3px;
+}
+
+.formContainer {
+  justify-content: space-around;
+  display: flex;
+}
+
+.formChild {
+  list-style: none;
+}
+
+.navContainer {
+  justify-content: space-around;
+  display: flex;
+}
+
+.navChild {
+  list-style: none;
+}
+
+.container {
+  flex-wrap: wrap;
+  margin: 5% 20% 20%;
+  display: flex;
+}
+
+.gallery {
+  object-fit: cover;
+  width: 25%;
+  height: auto;
+  margin: 2%;
+  display: block;
+}
+
+.parallax {
+  color: #fff;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.parallax:first-child {
+  background-image: url("snowCoveredMountain.e6d8e135.fba06c4f.png");
+}
+
+.parallax:nth-child(3) {
+  background-image: url("street.feaae8d8.a22531d5.png");
+}
+
+.content {
+  background-color: #f4f4f4;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+}
+
+svg {
+  place-self: center;
+  width: 2.5%;
+  height: 2.5%;
+  padding-left: 3%;
+}
+
+.headingContainer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.headingContainer img {
+  place-self: center;
+  width: 2.5%;
+  height: 2.5%;
+  padding-left: 3%;
+}
+/*# sourceMappingURL=index.2f0274cc.css.map */

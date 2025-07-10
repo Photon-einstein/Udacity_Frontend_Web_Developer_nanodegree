@@ -41,3 +41,6 @@ coverage/
 
 # Others files
 *local_links.md
+
+# Parcel cache
+**/.parcel-cache/
