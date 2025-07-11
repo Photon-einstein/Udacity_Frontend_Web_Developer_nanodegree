@@ -5,17 +5,23 @@
   "source": "index.html",
   "scripts": {
     "gulp": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require @babel/register --timeout 5000 'test/**/*.js'",
+    "lint": "eslint ."
   },
   "author": "Tiago Sousa",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/register": "^7.27.1",
     "@eslint/js": "^9.30.1",
+    "chai": "^5.2.1",
     "eslint": "^9.30.1",
     "globals": "^16.3.0",
     "gulp": "^5.0.1",
     "gulp-cli": "^3.1.0",
     "gulp-shell": "^0.8.0",
+    "mocha": "^11.7.1",
     "parcel": "^2.15.4"
   },
   "targets": {
