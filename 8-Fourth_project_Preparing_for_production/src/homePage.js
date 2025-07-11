@@ -1,7 +1,8 @@
 //DO NOT CHANGE ANYTHING IN THIS FILE//
 // This file is responsible for loading the home page
-//Imports image for homepage
-import homePageImage from "../images/homePage.png";
+const homePageImageURL = new URL("../images/homePage.png", import.meta.url)
+  .href;
+
 //Helper functions
 import {
   createHeader,
@@ -25,7 +26,7 @@ const renderHomePage = () => {
   );
 
   //Creates elements
-  const image = createImage(homePageImage, "Desk of laptops");
+  const image = createImage(homePageImageURL, "Desk of laptops");
 
   //Container for elements
   const homeContainer = document.createElement("div");
