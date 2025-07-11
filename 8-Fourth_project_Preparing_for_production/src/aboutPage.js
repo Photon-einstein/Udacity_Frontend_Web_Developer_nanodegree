@@ -4,7 +4,8 @@
 //including loading any content about the application and organization.
 //This imports helper functions
 //This imports the image
-import aboutPageImage from "../images/aboutImage.png";
+const aboutPageImageURL = new URL("../images/aboutImage.png", import.meta.url)
+  .href;
 // This function creates a header element
 import {
   createHeader,
@@ -37,7 +38,7 @@ export const renderAboutPage = () => {
   const aboutP = createElement("p", text);
 
   // Create and set up the image
-  const aboutImage = createImage(aboutPageImage, "Child Studying");
+  const aboutImage = createImage(aboutPageImageURL, "Child Studying");
 
   // Append the text elements to the text container
   textContainer.append(heading, subHeading, aboutP);

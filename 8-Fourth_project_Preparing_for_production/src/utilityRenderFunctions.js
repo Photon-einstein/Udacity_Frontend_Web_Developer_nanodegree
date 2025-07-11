@@ -19,7 +19,7 @@ const createElement = (elementType, text) => {
 const createImage = (url, alt) => {
   const img = document.createElement("img");
   img.src = url;
-  img.alt == alt;
+  img.alt = alt;
   return img;
 };
 

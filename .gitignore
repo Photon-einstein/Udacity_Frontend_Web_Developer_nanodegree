@@ -6,6 +6,7 @@ node_modules/
 
 # Ignore dist or build output if you're compiling SCSS or bundling
 **/build/
+**/dist/
 
 # Ignore SCSS cache
 .sass-cache/
