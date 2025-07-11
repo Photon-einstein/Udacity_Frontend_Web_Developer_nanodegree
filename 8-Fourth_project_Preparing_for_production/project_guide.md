@@ -8,6 +8,13 @@
    npx eslint src/<...>.js
 ```
 
+Commands applied on the root of the project:
+
+```bash
+   npx eslint src/shuffle.js
+   npx eslint src/utilityRenderFunctions.js
+```
+
 2. Install Gulp and Parcel
 
 ```bash
@@ -16,7 +23,7 @@ npm i --save-dev parcel
 
 ```
 
-3. Configure Gulp
+3. Configure Gulp (Done)
 
 Configure Gulp
 Create a gulpfile.js
@@ -30,8 +37,22 @@ Note: Parcel does this automatically no further changes or configuration is nece
 Commands applied on the root of the project:
 
 ```bash
-   npx eslint src/shuffle.js
-   npx eslint src/utilityRenderFunctions.js
+   npm run gulp
 ```
 
-99. Perform smoke tests, the application should run (in progress)
+4. Perform smoke tests, the application should run (Done)
+
+5. Unit Test with Mocha (in progress)
+
+Install mocha dependencies by entering (Done)
+
+```bash
+npm i --save-dev mocha chai
+```
+
+- Create a directory called test and create a test file called shuffle.js (in progress)
+- Create a described block for the shuffle function. (TBD)
+- Create at least one test that verifies that the shuffle function shuffles the indexes of an array (TBD)
+- Extra tests for this function are encouraged but not required. (TBD)
+- Return to gulpfile.js and create a new different called test task that will run your new unit test. (TBD)
+- run the test with npm run gulp test. (TBD)
