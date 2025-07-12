@@ -42,7 +42,7 @@ Commands applied on the root of the project:
 
 4. Perform smoke tests, the application should run (Done)
 
-5. Unit Test with Mocha (in progress)
+5. Unit Test with Mocha (Done)
 
 Install mocha dependencies by entering (Done)
 
@@ -50,9 +50,62 @@ Install mocha dependencies by entering (Done)
 npm i --save-dev mocha chai
 ```
 
-- Create a directory called test and create a test file called shuffle.js (in progress)
-- Create a described block for the shuffle function. (TBD)
-- Create at least one test that verifies that the shuffle function shuffles the indexes of an array (TBD)
-- Extra tests for this function are encouraged but not required. (TBD)
+- Create a directory called test and create a test file called shuffle.js (Done)
+- Create a described block for the shuffle function. (Done)
+- Create at least one test that verifies that the shuffle function shuffles the indexes of an array (Done)
+- Extra tests for this function are encouraged but not required. (Done)
 - Return to gulpfile.js and create a new different called test task that will run your new unit test. (TBD)
 - run the test with npm run gulp test. (TBD)
+
+To run the gulp unit tests:
+
+```bash
+npm run gulp test
+```
+
+6. Install Cypress, running the following command:
+
+```bash
+npm i --save-dev cypress
+```
+
+7. To run the Cypress's task runner, run the following command:
+
+```bash
+npx cypress open
+```
+
+8. Create two specs (Done)
+
+   - navigation.cy.js
+   - form.cy.js
+
+9. Write the ee test of the navigation.cy.js file (in progress)
+
+   Requirements:
+
+   - Create a described block for the navigation tests.
+
+   Write tests to verify the following:
+
+   - Clicking on "Card Set" in the side menu navigates to the page containing the card sets. (Done)
+
+   - Clicking on "About" in the side menu navigates to the About page. (in progress)
+   - Clicking on "Home" in the side menu navigates to the Home page. (TBD)
+
+Open two terminals, one to run the app, another to run the ee tests.
+
+To run the app:
+
+```bash
+npx run gulp
+```
+
+This starts the server at [http://localhost:1234/](http://localhost:1234/).
+Use the second terminal for all other commands.
+
+To run the ee tests:
+
+```bash
+npx cypress open
+```
