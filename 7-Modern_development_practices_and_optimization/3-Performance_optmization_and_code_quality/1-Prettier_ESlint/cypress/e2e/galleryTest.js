@@ -1,5 +1,4 @@
 /* eslint-disable no-undef */
-// eslint-disable-next-line no-undef
 describe("Gallery Page Functionality", () => {
     it("Gallery loads with images", () => {
         cy.visit("http://localhost:1234/");
