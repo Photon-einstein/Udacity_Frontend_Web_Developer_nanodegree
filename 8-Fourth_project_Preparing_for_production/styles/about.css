@@ -8,8 +8,6 @@ body main div .aboutContainer {
   align-items: center;
 }
 
-body main div .aboutContainer {}
-
 body main div .aboutContainer img {
   width: 400px;
   height: 300px;
@@ -40,25 +38,26 @@ body main .textContainer p {
   font-size: 1.5rem;
 }
 
-
-
 /* Media Query for Tablets (768px and below) */
 @media (max-width: 768px) {
   .aboutContainer {
     flex-direction: column;
     padding: 20px;
+    max-width: 100%;
   }
 
   .aboutContainer img {
     width: 300px;
     height: auto;
     margin-bottom: 20px;
+    max-width: 100%;
   }
 
   .textContainer {
     width: 90%;
     padding: 0 10px;
     align-items: center;
+    max-width: 80%;
   }
 
   .textContainer h2 {
@@ -79,6 +78,7 @@ body main .textContainer p {
   .aboutContainer {
     flex-direction: column;
     padding: 10px;
+    text-align: center;
   }
 
   .aboutContainer img {

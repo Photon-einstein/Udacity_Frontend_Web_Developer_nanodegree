@@ -11,4 +11,18 @@ describe("Navigation testing", () => {
       "Study Set Library"
     );
   });
+
+  it("Clicking on the 'About' in the side menu navigates to the about page", () => {
+    cy.visit("http://localhost:1234");
+    cy.get("#aboutPage").click();
+    cy.get(".aboutContainer").should("be.visible");
+    cy.get('[data-cy="about_page"]').should("contain", "About Study Night");
+  });
+
+  it("Clicking on the 'Home' in the side menu navigates to the home page", () => {
+    cy.visit("http://localhost:1234");
+    cy.get("#homePage").click();
+    cy.get(".homeContainer").should("be.visible");
+    cy.get('[data-cy="home_header"]').should("contain", "Study Night");
+  });
 });
