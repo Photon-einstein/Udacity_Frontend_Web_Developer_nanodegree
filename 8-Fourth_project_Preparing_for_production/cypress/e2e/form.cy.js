@@ -30,4 +30,16 @@ describe("Form functionality testing", () => {
         .should("contain", newSetName);
     });
   });
+
+  it("Tests to create set form, unhappy path", () => {
+    let initialSetCount;
+    cy.get(".cardSets").then(($sets) => {
+      initialSetCount = $sets.length;
+      cy.get('[type="submit"]').click();
+      cy.get("p.error")
+        .should("be.visible")
+        .should("contain", "TITLE CANNOT BE EMPTY");
+      cy.get(".cardSets").should("have.length", initialSetCount);
+    });
+  });
 });
