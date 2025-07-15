@@ -98,7 +98,7 @@ Open two terminals, one to run the app, another to run the ee tests.
 To run the app:
 
 ```bash
-npx run gulp
+npm run gulp
 ```
 
 This starts the server at [http://localhost:1234/](http://localhost:1234/).
