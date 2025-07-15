@@ -119,8 +119,8 @@ npx cypress open
 
 Checklist:
 
-- happy path for the create set form (in progress);
-- unhappy path for the create set form (TBD);
+- happy path for the create set form (Done);
+- unhappy path for the create set form (Done);
 
-- happy path for the add card form (TBD);
-- unhappy path for the add card form (TBD);
+- happy path for the add card form (Done);
+- unhappy path for the add card form (Done);
