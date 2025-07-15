@@ -6,6 +6,7 @@ body main div .aboutContainer {
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
+  max-width: 70%;
 }
 
 body main div .aboutContainer img {
@@ -34,7 +35,7 @@ body main .textContainer h3 {
   font-size: 2rem;
 }
 
-body main .textContainer p {
+body main {
   font-size: 1.5rem;
 }
 
@@ -43,7 +44,7 @@ body main .textContainer p {
   .aboutContainer {
     flex-direction: column;
     padding: 20px;
-    max-width: 100%;
+    max-width: 40%;
   }
 
   .aboutContainer img {
@@ -57,7 +58,7 @@ body main .textContainer p {
     width: 90%;
     padding: 0 10px;
     align-items: center;
-    max-width: 80%;
+    max-width: 40%;
   }
 
   .textContainer h2 {
@@ -79,6 +80,7 @@ body main .textContainer p {
     flex-direction: column;
     padding: 10px;
     text-align: center;
+    max-width: 100%;
   }
 
   .aboutContainer img {
