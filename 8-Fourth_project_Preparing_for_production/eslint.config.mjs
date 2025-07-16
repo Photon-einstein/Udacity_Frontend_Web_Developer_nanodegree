@@ -12,10 +12,10 @@ export default defineConfig([
     files: ["**/*.{js,mjs,cjs}"],
     languageOptions: { globals: globals.browser },
     rules: {
-      "no-var": "error", // Disallow the use of 'var'
-      "no-unused-vars": "error", // Disallow unused variables
-      semi: ["error", "always"], // Require semicolons at the end of statements
-      "no-console": "warn", // Warn if 'console.log' is left in the code
+      "no-var": "error",
+      "no-unused-vars": "error",
+      semi: ["error", "always"],
+      "no-console": "warn",
     },
   },
 ]);

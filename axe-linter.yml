@@ -2,9 +2,9 @@
 
 # Specify the files or directories to lint
 files:
-  - '**/*.html'   # Lint all HTML files in the project
-  - '**/*.css'    # Lint all CSS files in the project
-  - '**/*.js'     # Lint all JavaScript files in the project
+  - "**/*.html" # Lint all HTML files in the project
+  - "**/*.css" # Lint all CSS files in the project
+  - "**/*.js" # Lint all JavaScript files in the project
 
 # Specify the rules to enable or disable
 rules:
@@ -17,18 +17,18 @@ rules:
 
 # Specify the output format
 output:
-  format: 'stylish'  # Options: 'stylish', 'json', 'html'
+  format: "stylish" # Options: 'stylish', 'json', 'html'
 
 # Specify the severity levels for reporting
 severity:
-  error: true  # Report errors
-  warning: true  # Report warnings
-  info: false  # Report informational messages
+  error: true # Report errors
+  warning: true # Report warnings
+  info: false # Report informational messages
 
 # Additional options can be specified here
 options:
   # Specify any additional Axe options if needed
   axeOptions:
     runOnly:
-      type: 'tag'
-      values: ['wcag2a', 'wcag2aa']  # Run only WCAG 2.0 A and AA tests
+      type: "tag"
+      values: ["wcag2a", "wcag2aa"] # Run only WCAG 2.0 A and AA tests

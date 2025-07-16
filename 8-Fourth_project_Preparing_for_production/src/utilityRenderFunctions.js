@@ -1,13 +1,3 @@
-//TODO
-//Note: You will not be able to run parcel without first fixing these errors
-// Check for ESLint errors and format with Prettier.
-// This file contains a number of helper functions that create DOM elements.
-// These functions help prevent code repetition.
-// While the functions are mostly correct, there are some errors, the code is messy and hard to read.
-// Add configuration with ESLint for rules that disallow 'var', unused variables, require a semicolon
-// and at least two other rules: https://eslint.org/docs/latest/rules/
-// Use ESLint to identify the errors and Prettier to format the code.
-
 // Create a general element with specified text
 const createElement = (elementType, text) => {
   const element = document.createElement(elementType);

@@ -124,3 +124,23 @@ Checklist:
 
 - happy path for the add card form (Done);
 - unhappy path for the add card form (Done);
+
+11. Assess if all the requirements are already met or there is a need to do more work (in progress)
+
+    11.1. Shorten css selectors to a minimum required, test the app while changing (in progress)
+
+    - about.css (Done)
+    - flipcard.css (Done)
+    - form.css (Done)
+    - home.css (Done)
+    - navigationMenu.css (Done)
+    - style.css (Done)
+
+Requirement:
+
+- At minimum CSS selectors should be simplified. The project starts with long selectors like  
+  body main div .aboutContainer and should be manually shortened. Selectors like  
+  .aboutContainer img are acceptable, but anything significantly longer is too complex.  
+  Other manual optimizations are encouraged but not required.
+
+12. Clean up code (in progress)

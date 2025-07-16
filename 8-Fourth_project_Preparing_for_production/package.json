@@ -2,6 +2,7 @@
   "name": "final-project",
   "version": "1.0.0",
   "description": "front-end-nanodegree-final-project",
+  "type": "module",
   "source": "index.html",
   "scripts": {
     "gulp": "gulp",
