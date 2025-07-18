@@ -2,11 +2,12 @@
 
 1. Read the HTML code, file: 'index.html' (Done)
 2. Read the CSS code (Done)
-3. Read the data documents: (in progress)
-    - aboutMeData.json (Done)
-    - projectsData.json (Done)
+3. Read the data documents: (Done)
 
-4. View the images inside the image folder (in progress)
+   - aboutMeData.json (Done)
+   - projectsData.json (Done)
+
+4. View the images inside the image folder (Done)
 5. Create an empty JS file, filename: 'scripts.js' (Done)
 6. Load the json file into a JS object (Done)
 
