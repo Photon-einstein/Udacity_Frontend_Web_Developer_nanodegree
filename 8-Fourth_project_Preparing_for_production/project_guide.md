@@ -104,13 +104,19 @@ npm run gulp
 This starts the server at [http://localhost:1234/](http://localhost:1234/).
 Use the second terminal for all other commands.
 
-To run the ee tests:
+To run the ee tests in the terminal:
 
 ```bash
-npx cypress open
+npm run cypress
 ```
 
-10. Navigate to cypress/e2e forms.cy.js and add ee tests that follow the following specs (in progress)
+To run the ee tests in the cypress application:
+
+```bash
+npm run cypress:open
+```
+
+10. Navigate to cypress/e2e forms.cy.js and add ee tests that follow the following specs (Done)
 
 - Create tests to verify the functionality of both the Create Set Form and the Add Card Form:
 - Test the "happy path" for both forms (i.e., valid input and successful submission).
@@ -125,9 +131,9 @@ Checklist:
 - happy path for the add card form (Done);
 - unhappy path for the add card form (Done);
 
-11. Assess if all the requirements are already met or there is a need to do more work (in progress)
+11. Assess if all the requirements are already met or there is a need to do more work (Done)
 
-    11.1. Shorten css selectors to a minimum required, test the app while changing (in progress)
+    11.1. Shorten css selectors to a minimum required, test the app while changing (Done)
 
     - about.css (Done)
     - flipcard.css (Done)
@@ -143,4 +149,4 @@ Requirement:
   .aboutContainer img are acceptable, but anything significantly longer is too complex.  
   Other manual optimizations are encouraged but not required.
 
-12. Clean up code (in progress)
+12. Clean up code (Done)
